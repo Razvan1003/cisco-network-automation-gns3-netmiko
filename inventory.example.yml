@@ -1,0 +1,11 @@
+devices:
+  - name: R1
+    host: 192.168.122.101
+    device_type: cisco_ios
+    username_env: LAB_USERNAME
+    password_env: LAB_PASSWORD
+  - name: SW1
+    host: 192.168.122.102
+    device_type: cisco_ios
+    username_env: LAB_USERNAME
+    password_env: LAB_PASSWORD

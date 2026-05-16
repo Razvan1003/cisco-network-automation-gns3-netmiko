@@ -1,0 +1,10 @@
+inventory.yml
+backups/
+validation/*.txt
+validation/*.log
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
