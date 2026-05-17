@@ -4,7 +4,7 @@
     "auto_start": false,
     "drawing_grid_size": 25,
     "grid_size": 75,
-    "name": "tema2_netmiko",
+    "name": "gns3-vlan-ospf-acl-lab",
     "project_id": "a9f9aaa1-d33c-4713-8fe8-d08956ecb7cf",
     "revision": 9,
     "scene_height": 1000,

@@ -15,9 +15,9 @@ The project demonstrates how network configuration can be applied, backed up and
 
 ## Included Labs
 
-### Tema 2 - VLANs, OSPF and ACL Automation
+### GNS3 VLAN, OSPF and ACL Automation Lab
 
-Path: `labs/tema2_netmiko/`
+Path: `labs/gns3-vlan-ospf-acl-lab/`
 
 This lab configures:
 
@@ -34,7 +34,7 @@ This lab configures:
 inventory.example.yml      # example device inventory
 requirements.txt           # Python dependencies
 labs/
-  tema2_netmiko/            # complete GNS3/Netmiko lab
+  gns3-vlan-ospf-acl-lab/   # complete GNS3/Netmiko lab
 scripts/
   backup_configs.py        # saves running-config output
   verify_connectivity.py   # runs show commands and stores outputs
@@ -74,10 +74,10 @@ $env:LAB_PASSWORD="your_password"
 
 ## Usage
 
-Run the included Tema 2 lab:
+Run the included GNS3 VLAN/OSPF/ACL lab:
 
 ```bash
-cd labs/tema2_netmiko
+cd labs/gns3-vlan-ospf-acl-lab
 python scripts/run_all.py
 python scripts/verify.py
 ```

@@ -1,8 +1,8 @@
 # GNS3 Lab Topology
 
-The repository includes a complete Netmiko lab under `labs/tema2_netmiko/`.
+The repository includes a complete Netmiko lab under `labs/gns3-vlan-ospf-acl-lab/`.
 
-## Tema 2 Topology
+## GNS3 VLAN, OSPF and ACL Lab
 
 ```text
 PC1 -- VLAN 10 -- ESW1 -- trunk -- R1 -- 10.0.13.0/30 -- R3 -- PC3 / VLAN 30

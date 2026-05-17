@@ -1,8 +1,10 @@
-# Tema 2 - GNS3 Network Automation with Netmiko
+# GNS3 VLAN, OSPF and ACL Automation Lab
 
 This lab automates a small GNS3 topology with Python and Netmiko. It configures VLAN segmentation, router-on-a-stick inter-VLAN routing, OSPF between routers and an ACL that blocks ICMP from VLAN 10 to VLAN 30 while permitting other traffic.
 
 ## Topology
+
+![GNS3 topology](docs/topology.jpg)
 
 ```text
 PC1 -- VLAN 10 -- ESW1 -- trunk -- R1 -- 10.0.13.0/30 -- R3 -- PC3 / VLAN 30
@@ -27,10 +29,11 @@ Main networks:
 ## Files
 
 ```text
-scripts/                  # Netmiko automation scripts
-configs/                  # clean reference configs matching the scripts
-topology/tema2_netmiko.gns3
-validation/               # local output folder, ignored by Git except .gitkeep
+scripts/                         # Netmiko automation scripts
+configs/                         # clean reference configs matching the scripts
+topology/gns3-vlan-ospf-acl-lab.gns3
+docs/topology.jpg                # topology screenshot
+validation/                      # local output folder, ignored by Git except .gitkeep
 ```
 
 ## Requirements
