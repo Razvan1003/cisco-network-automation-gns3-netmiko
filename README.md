@@ -1,8 +1,8 @@
 # Cisco Network Automation - GNS3 and Netmiko
 
-Python automation lab for Cisco-style network devices running in GNS3.
+Python automation labs for Cisco-style network devices running in GNS3.
 
-The project is designed as a public portfolio companion to the SmartOffice Packet Tracer project. It demonstrates how network configuration can be backed up, verified and updated with Python and Netmiko.
+The project demonstrates how network configuration can be applied, backed up and verified with Python and Netmiko. It now includes a real GNS3 lab for VLANs, inter-VLAN routing, OSPF and ACL validation.
 
 ## Goals
 
@@ -13,11 +13,28 @@ The project is designed as a public portfolio companion to the SmartOffice Packe
 - Keep credentials out of source control
 - Document repeatable GNS3 network automation workflows
 
+## Included Labs
+
+### Tema 2 - VLANs, OSPF and ACL Automation
+
+Path: `labs/tema2_netmiko/`
+
+This lab configures:
+
+- VLAN 10 and VLAN 20 on `ESW1`
+- router-on-a-stick subinterfaces on `R1`
+- a routed `R1` to `R3` transit link
+- OSPF route exchange
+- an ACL that blocks ICMP from VLAN 10 to VLAN 30
+- Netmiko verification commands for routers and switch
+
 ## Repository Structure
 
 ```text
 inventory.example.yml      # example device inventory
 requirements.txt           # Python dependencies
+labs/
+  tema2_netmiko/            # complete GNS3/Netmiko lab
 scripts/
   backup_configs.py        # saves running-config output
   verify_connectivity.py   # runs show commands and stores outputs
@@ -57,6 +74,14 @@ $env:LAB_PASSWORD="your_password"
 
 ## Usage
 
+Run the included Tema 2 lab:
+
+```bash
+cd labs/tema2_netmiko
+python scripts/run_all.py
+python scripts/verify.py
+```
+
 Back up running configurations:
 
 ```bash
@@ -85,5 +110,4 @@ python scripts/push_config.py --inventory inventory.yml --device R1 --config con
 
 - Add GNS3 topology screenshot
 - Add sample validation outputs
-- Add VLAN and routing automation examples
 - Add pre-change and post-change verification

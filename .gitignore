@@ -2,6 +2,10 @@ inventory.yml
 backups/
 validation/*.txt
 validation/*.log
+labs/**/validation/*.txt
+labs/**/validation/*.log
+*.zip
+*.log
 
 __pycache__/
 *.py[cod]
